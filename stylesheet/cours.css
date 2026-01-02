@@ -1,0 +1,313 @@
+body{
+    background-color: white !important;
+}
+section{
+    padding: 0;
+    position: relative;
+    background-color: white;
+}
+#college,#lycee,#concours{
+    padding: 4em 2em;
+}
+#lycee{
+    background-color: rgba(128, 128, 128, 0.144);
+}
+
+.nv_scolaire .main{
+    display: flex;
+    justify-content: end;
+    padding: 2em;
+    
+}
+.main img, .main video{
+    max-width: fit-content;
+    object-fit: cover;
+}
+
+
+.row img{flex: 1;}
+
+.side{
+
+    
+    position: fixed;
+    height: 100%;
+    top:47px;
+    left: 0;
+    z-index: 4;
+    background-color: rgba(128, 128, 128, 0.144);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.363);
+}
+
+#accordion .item{
+    padding: 0.6em 1em;
+    
+    display: block;
+}
+#accordion .item:hover{
+    background-color: var(--clean2);
+    color: var(--clean4) !important;
+}
+.item .collapse{
+    padding: 0 1em !important;
+}
+.main,footer, .supportedBy{
+    margin-left: 167.984px;
+}
+
+
+@media screen and (max-width:767px) {
+    .side{
+        display: none;
+    }
+    .main,footer, .supportedBy{
+        margin-left: 0;
+    }
+    .supportedBy{
+        width: 100%;
+    }
+    .row{
+        align-items: center;}
+    .matiere{
+        
+        
+    }
+}
+
+
+
+
+
+footer{
+    background-image: url();
+}
+
+/*=========Matiere^===============*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    row-gap: 1em;
+}
+.matiere{
+    flex: 1;
+    max-width: 273.266px !important;
+    min-width:150px;
+    border:none;
+    box-shadow: 0 0 7px rgba(43, 43, 43, 0.315);
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    align-items: center;
+    transition: .2s;
+
+}
+.matiere:hover{
+    scale: 1.02;
+    transition: .2s;
+    border: none;
+    cursor: pointer;
+}
+.matiere .head{
+    width: 100%;
+    margin: 0;
+    height: 30px;
+    text-align: start;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5em;
+    background-color: #ffffff;
+}
+
+.matiere .content{
+    color: var(--clean4);
+}
+.foot{
+    padding: 1em;
+}
+.matiere button{
+    padding: 0.3em 2.3em;
+    border-radius: 100px;
+    background-color:white;
+    transition: 0.4s;
+    border: none;
+
+}
+.matiere button:hover{
+    box-shadow: 0px 0px 3px grey inset;
+    transition: .4s ;
+    background-color: #ffffff;
+   
+
+    
+}
+.math .head {}
+.math{background-color: var(--clean2);}
+.phisic .head {}
+.phisic {background-color: var(--clean11);}
+.svt .head{}
+.svt{background-color: blueviolet;}
+.francai .head {}
+.francai {background-color: var(--claan5);}
+.matiere img{width: 40%;}
+
+.btn-math{          color: var(--clean2);}
+
+.btn-phisic{        color: var(--clean11);}
+
+.btn-svt{           color: blueviolet;}
+
+.btn-francai{       color: var(--claan5);}
+
+/*=====lycee===================================*/
+
+@media screen and (max-width:680px) {
+    .content{
+        justify-content: center;
+    }
+    
+}
+#lycee .head{}
+#lycee .content{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+
+}
+#lycee .content .filiere {
+    width: min-content;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .4s;
+    opacity: 0.89999;
+}
+.filiere:hover{
+    transition: .4s;
+    opacity: 1 !important;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.363);
+    scale: 1.01;
+    cursor:pointer;
+}
+#lycee img{
+    max-height: 112.858px;
+    min-width:260px ;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+.filiere .title{
+    padding: 1em;
+    min-height: 101.594px;
+}
+.filiere .title p{
+    color: #555;
+}
+.filiere .choix{
+    margin: 1em;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    min-height: 54px;
+}
+.choix button{
+    border: none;
+    padding: 0.3em 2em;
+    background-color: rgb(42, 64, 65);
+    color: white;
+    text-transform: capitalize;
+}
+.choix button:hover{
+    background-color: rgb(63, 95, 97);
+}
+
+/*===  Concours ============================*=*/
+.cncr-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+.cncr-list .item{
+    border: 1px solid #9999;
+    padding: 1em;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    transition: .25s;
+
+} .cncr-list .item:hover{
+    transition: 0.25s;
+    scale: 1.01;
+    box-shadow: 0 0 8px rgba(128, 128, 128, 0.308);
+    border: 1px solid var(--clean2);
+    cursor: pointer;
+}
+.cncr-list .title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    
+
+}
+.title span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.cncr-list .title button{
+    padding: 0.5em 1.5em;
+    border: none;
+    background-color:var(--clean2);
+    color: white;
+    border-radius: 9px;
+}
+.cncr-list .title button:hover{
+    transition: .2s;
+    background-color: var(--clean3);
+}
+.cncr-list span{
+    flex: 6;
+}
+.cncr-list .item img{
+    flex: 1;
+    width: 100%;
+    max-width: 30px;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root{
+    --clean1:#17252a;
+    --clean2:#2b7a78;
+    --clean3:#3aafa9;
+    --clean4:#def2f1;
+    --claan5:#da3731;
+    --clean6:rgb(137,63,50);
+    --clean7:rgb(137,63,50);
+    --clean8:#901a2b;
+    --clean9:#2596be;
+    --clean10:#994b25;
+    --clean11: #FFC727;
+}

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Achraf Fril">
+    <title>Eduvaluation | Cours</title>
+    <link rel="icon" type="image/x-icon" href="icons/email.png">
+    <link rel="stylesheet" href="stylesheet\theme.css">
+    <link rel="stylesheet" href="stylesheet/cours.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@300&family=Oswald&family=Playfair+Display&display=swap" rel="stylesheet">
+
+ <!--bootstrap-->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+ <!--icons-->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+       footer {
+        padding-top: 8%;
+        background-image: url(media/Untitled\ design\ \(2\).png);
+        background-size: cover;
+        background-position: top;
+       }
+   
+    </style>
+</head>
+<body>
+    <header>
+        
+        <a href="home.html" class="logo"><button>EDUVALUATION</button></a>
+        <nav id="nav">
+        <a href="home.html"  class="">
+            <button class="drop">Home 
+                <div class="down_menu">
+                    
+                    <a href="home.html#nos_service" class="item">Nos services</a>
+                    <a href="home.html#notre_equipe" class="item">Notre equipe</a>
+                    <a href="home.html#partisanes" class="item">Partisanes</a>
+                </div>
+            </button>
+            
+        </a>
+        <a href="cours.html" class="link">
+            <button class="drop index">Cours 
+                <div class="down_menu">
+                    
+                    <a href="#college" class="item">Collège</a>
+                    <a href="#lycee" class="item">Lycée</a>
+                    <a href="#concours" class="item">Concours post-bac</a>
+                </div>
+            </button>
+        </a>
+        <a href="formation.html" class="link">
+            <button class="drop">Formations en ligne 
+                <div class="down_menu">
+                    
+                    <a href="formation.html#formation" class="item">Formations</a>
+                    <a href="formation.html#formation" class="item">Les certifactions</a>
+                    <a href="formation.html#howto" class="item">Comment étudier en ligne </a>
+
+
+                </div>
+            </button>
+        </a>
+        <a href="contact.html" class="link"><button>Contact</button></a>
+        <a href="regoignez.html" class="rejoin"> <button>Rejoignez-nous <i class="bi bi-box-arrow-in-right"></i></button></a>
+        </nav>
+        <button class="more_list_icon" onclick="show_hide()">&#9776</button>
+
+    </header>
+    <section class=".row">
+        <nav class="side">
+            <div id="accordion">
+                <a class="item" href="#college">Collège</a>
+                <a class="item" href="#lycee">Lycée</a>
+                <a class="item" href="#concours">Concours Post-Bac</a>
+            </div>
+             
+             
+
+                           
+
+        </nav>
+
+       <div class="main">
+         <!--College-->
+         <div class="nv_scolaire " id="college">
+            <h3 class="head">Collège</h3>
+            <div class="row">
+                <div class="matiere math">
+                    <div class="head">
+                        <i class="bi bi-calendar-day-fill"></i>
+                        <i class="bi bi-three-dots"></i>
+                    </div>
+                    <img src="media/Mathematic.png" alt="">
+                    <div class="content">Mathematique</div>
+                    <div class="foot">
+                        
+                        <a href="">
+                            <button class="btn-math">Rejoinez</button>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="matiere phisic">
+                    <div class="head">
+                        <i class="bi bi-calendar-day-fill"></i>
+                        <i class="bi bi-three-dots"></i>
+                    </div>
+                    <img src="media/Science-cuate (2).png" alt="">
+                    <div class="content">Physique </div>
+                    <div class="foot">
+                        <a href="">
+                            <button class="btn-phisic">Rejoinez</button>
+                        </a>
+                    </div>      
+                </div>
+
+
+                <div class="matiere svt">
+                    <div class="head">
+                        <i class="bi bi-calendar-day-fill"></i>
+                        <i class="bi bi-three-dots"></i>
+                    </div>
+                    <img src="media/Biologist-pana.png" alt="">
+                    <div class="content">Science de la vie et de la terre</div>
+                    <div class="foot">
+                        <a href="">
+                            <button class="btn-svt">Rejoinez</button>
+                        </a>
+                    </div>
+                </div>
+ 
+
+                <div class="matiere francai"> 
+                    <div class="head">
+                        <i class="bi bi-calendar-day-fill"></i>
+                        <i class="bi bi-three-dots"></i>
+                    </div>
+                    <img src="media/Learning languages-pana (1).png" alt="">
+                    <div class="content">Francai | Anglais</div>
+                    <div class="foot">
+                        <a href="">
+                            <button class="btn-francai">Rejoinez</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Lycee-->
+        <div class="nv_scolaire" id="lycee">
+            <h3 class="head">Lycée</h3>
+            <div class="content">
+                <div class="filiere" id="smath">
+                    <img src="media/math-pexels-pixabay-53621.jpg" alt="">
+                    <div class="title">
+                        <h4>Mathématiques</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium autem officiis molestiae!</p>
+                    </div>
+                    <div class="choix">
+                        <button class="SA">SM A</button>
+                        <button class="SB">SM B</button>
+                    </div>
+                    
+                </div>
+                <div class="filiere" id="spc">
+                    <img src="media/physic-pexels-jeshootscom-714699.jpg" alt="">
+                    <div class="title">
+                        <h4>Science Physique</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus officiis deserunt iure.</p>
+                    </div>
+                    <div class="choix">
+                        <button>explorer</button>
+                    </div>
+                    
+                </div>
+                <div class="filiere" id="ssvt">
+                    <img src="media/svt-pexels-katerina-holmes-5905931.jpg" alt="">
+                    <div class="title">
+                        <h4>Science de la ville et de la terre</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus officiis </p>
+                    </div>
+                    <div class="choix">
+                        <button>explorer</button>
+                    </div>
+                </div>
+                <div class="filiere" id="seco">
+                    <img src="media/eco-pexels-karolina-grabowska-7876494.jpg" alt="">
+                    <div class="title">
+                        <h4>Science économique</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus officiis deserunt iure.</p>
+                    </div>
+                    <div class="choix">
+                        <button>SE</button>
+                        <button>G & C</button>
+                    </div>
+                </div>
+                <div class="filiere" id="stechno">
+                    <img src="media/techno-pexels-matej-716661.jpg" alt="">
+                    <div class="title">
+                        <h4>Science et technologies</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus officiis deserunt iure.</p>
+                    </div>
+                    <div class="choix">
+                        <button>électriques</button>
+                        <button>mécanique</button>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+        
+        <!--Concour post bac-->
+        <div class="nv_scolaire " id="concours">
+            <h3 class="head">Concours Post-Bac</h3>
+            <div class="cncr-list">
+                    <div class="item">
+                        <div class="title"> 
+                            <img src="icons/icon-medicine.png" alt="">
+                            <span>FMP (Facultés de Médecine et de Pharmacie) </span> 
+                            <button>Rejoinez</button> 
+
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="title"> 
+                            <img src="icons/icon-dentistry.png" alt="">
+                            <span>FMD (Facultés de Médecine Dentaire)  </span> 
+                            <button>Rejoinez</button>
+
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="title"> 
+                            <img src="icons/icon-maths.png" alt="">
+                            <span>ENSA (Écoles Nationales des Sciences Appliquées)  </span> 
+                            <button>Rejoinez</button>
+
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="title"> 
+                            <img src="icons/icon-graduation-hat.png" alt="">
+                            <span>ENCG (Écoles Nationales de Commerce et de Gestion)  </span> 
+                            <button>Rejoinez</button>
+
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="title"> 
+                            <img src="icons/icon-palette.png" alt="">
+                            <span>ENSAM (Écoles Nationales Supérieures d'Arts et Métiers) </span> 
+                            <button>Rejoinez</button> 
+
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="title"> 
+                            <img src="icons/icon-pencil.png" alt="">
+                            <span>ENA (Écoles Nationales d'Architecture)  </span> 
+                            <button>Rejoinez</button>
+
+                            
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="title"> 
+                            <img src="icons/icon-graduation-hat.png" alt="">
+                            <span>ISCAE (Institut Supérieur de Commerce et d'Administration des Entreprises)</span> 
+                            <button>Rejoinez</button> 
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="title"> 
+                            <img src="icons/icon-maths.png" alt="">
+                            <span>ISEM (Institut Supérieur d'Études Maritimes)  </span> 
+                            <button>Rejoinez</button>
+
+                            
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="title"> 
+                            <img src="icons/icon-flasks.png" alt="">
+                            <span>ISIC (Institut Supérieur de l'Information et de la Communication)  </span> 
+                            <button>Rejoinez</button>
+
+                            
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="title"> 
+                            <img src="icons/icon-dna.png" alt="">
+                            <span>ISPITS (Instituts Supérieurs des Professions Infirmiers et des Techniques de Santé)  </span> 
+                            <button>Rejoinez</button>
+
+                            
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="title"> 
+                            <img src="icons/icon-graduation-hat.png" alt="">
+                            <span>ISITT (Institut Supérieur International du Tourisme de Tanger)  </span> 
+                            <button>Rejoinez</button>
+
+                            
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="title"> 
+                            <img src="icons/icon-agronomy.png" alt="">
+                            <span>ENAM (École Nationale d'Agriculture de Meknès)  </span> 
+                            <button>Rejoinez</button>
+
+                            
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="title"> 
+                            <img src="icons/icon-graduation-hat.png" alt="">
+                            <span>INAS (Institut National de l'Action Sociale)  </span> 
+                            <button>Rejoinez</button>
+
+                            
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="title"> 
+                            <img src="icons/icon-test.png" alt="">
+                            <span>ISPM (Institut Supérieur des Pêches Maritimes)  </span> 
+                            <button>Rejoinez</button>
+
+                           
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="title"> 
+                            <img src="icons/icon-satellite.png" alt="">
+                            <span>INPT (Institut National des Postes et Télécommunications)  </span> 
+                            <button>Rejoinez</button>
+
+                           
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="title"> 
+                            <img src="icons/icon-agronomy.png" alt="">
+                            <span>IAV (Institut Agronomique et Vétérinaire Hassan 2)  </span> 
+                            <button>Rejoinez</button>
+
+                            
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="title"> 
+                            <img src="icons/icon-healthcare.png" alt="">
+                            <span>ISSS (Institut Supérieur des Sciences de la Santé)  </span> 
+                            <button>Rejoinez</button>
+
+
+                        </div> 
+                    </div>
+  
+                    </div>
+        </div>
+       </div>
+
+    </section>
+    
+    <footer>
+        <div class="icons">
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-whatsapp"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-google"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-microsoft-teams"></i></a>
+            <a href=""><i class="bi bi-youtube"></i></a>
+            <a href=""><i class="bi bi-"></i></a>
+
+            
+        </div>
+        <p>&copy;2022 Education Assoiciation Inc. All rights reserved.
+            Eduvaluation® and Edu-Association® are registered trademarks. <a href="">Legal informations.</a></p>
+        
+    </footer>
+    <script src="script animation/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+section {
+    margin: 0;
+    padding: 3em;
+}
+section h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.our_service{background-color: rgba(153, 153, 153, 0.116);}
+
+/*=== front-end home =============*/
+.front{
+    background-color: var(--clean2);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 46px;
+
+}
+.front .title{
+    flex: 2;
+    color: var(--clean4);
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: down 3s;
+    
+}
+.title h1,h1 span{
+    width: 80%;
+    font-size: 6vw;
+    font-family: var(--oswald);
+    
+}
+.title h1{
+
+   width: fit-content;
+    border: 2px transparent;
+    border-bottom: 2px solid var(--clean4);
+}
+
+.color{
+    color: var(--clean1);
+}
+.start{
+    padding: 0.5em 2.5em;
+    border: none;
+    font-weight: 200;
+    animation: up 2s ;
+
+}
+    
+.front img{
+    width: 100%;
+    max-width: 300px;
+    flex: 1;
+    animation: toleft 2s;
+
+}
+.home_img{
+        border: 1px solid var(--clean2);
+        padding: 2px;
+    } 
+@keyframes down {
+    0%   {transform: translateY(-50px);opacity: 0.8;}
+    100% {transform: translateY(0px);opacity: 1;}   
+}
+@keyframes up {
+    0%{transform: translateY(50px);opacity: 0.8;}
+    100%{transform: translateY(0px);opacity: 1;}
+}
+@keyframes toleft {
+    0%   {transform: translateX(50px);}
+    100% {transform: translateX(0px);}
+}
+
+@media screen and (max-width:552px) {
+    .front img {
+        display: none;
+    
+    }
+    }
+/*============service===========*/
+.service{
+    padding-left: 1.2em;
+    display: flex;
+    gap: 1.5em;
+    row-gap: 2em;
+    flex-wrap: wrap;
+    margin-bottom: 3em;
+    width: 80%;
+    margin: auto;
+     
+}
+.service .item{
+    flex: 100%;
+    padding: 2em;
+    border: 1px solid rgba(153, 153, 153, 0);
+    box-shadow: 0 0 6px rgba(153, 153, 153, 0.301);
+    transition: .4s;
+    background-color: white;
+    border-radius: 10px;
+    
+    color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+   
+}
+.service .item p{
+   
+    flex: 1;
+    max-height: 240px;
+    padding: 2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.service .item img{
+
+    flex: 1;
+    object-fit: cover;
+    max-width: 423.406px;
+    max-height: 423.406px;
+   
+}
+.service .item:hover{
+    transition: .4s;
+    scale: 1.011;
+    box-shadow: 0 0 10px rgba(61, 61, 61, 0.233);
+}
+
+
+
+/*=== Team ====================================*/
+.team{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+@media screen and (max-width:767px)  {
+    .team{
+        justify-content: center;
+    }
+    
+}
+.team .row{
+    flex: 1;
+    min-width: 250px;
+    max-width: 338px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid ;
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #999;
+    transition: .3s;
+}
+
+.team .row:hover{
+    transition: .3s;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.466);
+    scale: 1.01;
+    border: 1px solid var(--clean2);
+}
+.team h3,p{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+.color{
+    color: var(--clean3);
+}
+.team h4, .team p {
+    text-align: center;
+}
+.team .social{
+    display: flex;
+    justify-content:  center;
+    width: 100%;
+    gap: 1.5em;
+
+}
+.team img{
+    margin: auto;
+    width: 150px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+/*=====*/
+.download{
+    background-color: rgba(153, 153, 153, 0.116);
+}
+.download .row{
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.315);
+   
+}
+ 
+.download .row{
+    display: flex;
+    align-items: center;
+    gap: 5em;
+
+}
+.down{
+    flex: 1;
+    text-align: center;
+}
+img.flx{
+    flex: 1;
+    max-width: 300px;
+}
+.down .app{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+.app img{
+    width: 100%;
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+.app .scale{
+    scale: 1.3;
+}

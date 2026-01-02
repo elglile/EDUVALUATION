@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Achraf Fril">
+    <title>Eduvaluation | Rejoignez-nous</title>
+    <link rel="icon" type="image/x-icon" href="icons/email.png">
+    <link rel="stylesheet" href="stylesheet\theme.css">
+    <link rel="stylesheet" href="stylesheet/rejoin.css" >
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@300&family=Oswald&family=Playfair+Display&display=swap" rel="stylesheet">
+
+     <!--bootstrap-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+     <!--icons-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+       footer {
+        padding-top: 8%;
+        background-image: url(media/Untitled\ design\ \(2\).png);
+        background-size: cover;
+        background-position: top;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo"><button>EDUVALUATION</button></a>
+        <nav id="nav">
+        <a href="home.html"  class="">
+            <button class="drop">Home 
+                <div class="down_menu">
+                    
+                    <a href="home.html#nos_service" class="item">Nos services</a>
+                    <a href="home.html#notre_equipe" class="item">Notre equipe</a>
+                    <a href="home.html#partisanes" class="item">Partisanes</a>
+                </div>
+            </button>
+            
+        </a>
+        
+        <a href="cours.html" class="link">
+            <button class="drop">Cours 
+                <div class="down_menu">
+                    
+                    <a href="cours.html#college" class="item">Collège</a>
+                    <a href="cours.html#lycee" class="item">Lycée</a>
+                    <a href="cours.html#concours" class="item">Concours post-bac</a>
+                </div>
+            </button>
+        </a>
+        <a href="formation.html" class="link">
+            <button class="drop">Formations en ligne 
+                <div class="down_menu">
+                    
+                    <a href="formation.html#formation" class="item">Formations</a>
+                    <a href="formation.html#formation" class="item">Les certifactions</a>
+                    <a href="formation.html#howto" class="item">Comment étudier en ligne </a>
+
+                </div>
+            </button>
+        </a>
+        <a href="contact.html" class="link"><button>Contact</button></a>
+        <button onclick="darkmode()" class="dark"><i class="bi bi-moon-stars-fill"></i></button>
+        </nav>
+       
+        <button class="more_list_icon" onclick="toggle()">&#9776</button>
+
+    </header>
+    <div class="title">
+        <h1>Rejoignez-nous</h1>
+    </div>
+    <section>
+        
+        <form action="" class="container">
+            <h1>EDUVALUATION</h1>
+            <div class="row">
+                <div class="col main">
+                    <h3>Personnel Informations</h3>
+                    <div class="part fullname">
+                        <input required value=""  type="text" placeholder="Nom" >
+                        <input required value=""  type="text" placeholder="Prenom">
+                    </div>
+
+                    
+
+                    <div class="part birth_gender">
+                        <input required  type="date" name="" id="">
+                       <div class="gender">
+                        <label for="male"><input required value="" type="radio" name="gender" id="male">Masculin</label>
+                        <label for="female"><input required value="" type="radio" name="gender" id="female">féminin</label>
+                       </div>
+
+                    </div>
+                    
+                    <hr>
+                    
+                    
+                    
+                    <div class="part residence">
+                        <h3>Résidence</h3>
+                        <label for="nationality">Nationalité:
+                            <select name="nationality" id="nationality">
+                                <option value="">Marocain</option>
+                                <option value="">Etrangère</option>
+                            </select>
+                        </label>
+                        <label for="city">Ville :
+                            <select name="city" id="city">
+                                <option value="casa">casablanca</option>
+                                <option value="rabat">rabat</option>
+                                <option value="fes">fes</option>
+                                <option value="tanger">tanger</option>
+                                <option value="">Autre</option>
+                               
+                            </select>
+                        </label>
+                        <label for="postal">Code Postal : 
+                            <input required value="" type="number" max="60000" placeholder="Code postal" >
+                        </label>
+                       
+
+                    </div>
+                    <div class="part login">
+                        <h3>Connexion</h3>
+
+                        <input  required value="" type="tel" name="tel" id="personal_phone_number" placeholder="Numéro de téléphone" pattern="[0-9]" title="Ne doit avoir que des chiffres" maxlength="20">
+                        <input  required value="" type="email" placeholder="Adresse Email" maxlength="20">
+                        <input required value="" type="password" name="key" id="login_password" placeholder="Crée un mote de pass" maxlength="20">
+                        <input required value="" type="password" name="key" id="login_password" placeholder="Confirmer le mote de pass" maxlength="20">
+                        <label for="rem"><input style="accent-color: var(--clean3);" type="checkbox" name="" id="rem"> Remember</label>
+                        <input type="submit" value="Enregistrer">
+                    </div>
+
+
+
+                    
+                    
+            
+                </div>
+
+                <div class="col col2" >
+                    <img src="media/portrait_maria.jpg" alt=""><img src="media/portrait_msmhavisham.jpg" alt="">
+                </div>
+            </div>
+                
+            </div>
+            
+            
+        </form>
+    </section>
+    <aside class="supportedBy" >
+        <h3>Supported and trusted by </h3>
+        <div class="row">
+            <img src="media/download.png" alt="">
+            <img src="media/unnamed (1).png" alt="">
+            <img src="media/unnamed (2).png" alt="">
+            <img src="media/unnamed (3).png" alt="">
+            <img src="media/unnamed.png" alt="">
+            <img src="media/uqar_2014.jpg" alt="">
+        </div>
+    </aside>
+    <footer>
+        <div class="icons">
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-whatsapp"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-google"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-microsoft-teams"></i></a>
+            <a href=""><i class="bi bi-youtube"></i></a>
+            <a href=""><i class="bi bi-"></i></a>
+
+            
+        </div>
+        <p>&copy;2022 Education Assoiciation Inc. All rights reserved.
+            Eduvaluation® and Edu-Association® are registered trademarks. <a href="">Legal informations.</a></p>
+        
+    </footer>
+    <script src="script animation/script.js"></script>
+
+</body>
+</html> 
+
+

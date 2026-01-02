@@ -1,0 +1,75 @@
+section{
+    background-color: rgba(153, 153, 153, 0.212);
+}
+.social{
+    display: flex;
+    gap: 2em;
+    width: 80%;
+    margin: 2em auto;
+}
+.social a{
+    width: 100%;
+    flex: 1;
+}
+.social button {
+    width: 100%;
+    padding: 1em;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+    border-radius:15px ;
+    
+}
+.wts button{background-color: #25D366;}
+.lnk button{background-color: #1070c9;}
+.twt button{background-color: #1DA1F2;}
+.gml button{background-color: white;color: #333;}
+.gml img{max-width: 20px;}
+
+
+
+.message{
+    background-color: white;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.281);
+    display: flex;
+    width: 80%;
+    padding: 1em;
+    margin: auto;
+}
+.message input, .message textarea{
+    width: 80%;
+    margin: 10px auto;
+    outline: none;
+    border: none;
+    background-color: rgba(153, 153, 153, 0.212);
+    padding: 0.5em;
+    
+}
+.message .submiting{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    width: 80%;
+    margin: 1em auto;
+
+    
+}
+.submiting button{
+    flex: 1;
+    border: none;
+    padding: 0.7em;
+    background-color: var(--clean2);
+    color: white;}
+.message textarea{
+    height: 80%;
+}
+.col1{flex: 2;}
+.col2{flex:1}
+.message .col{
+    display: flex;
+    flex-direction: column !important;
+}
